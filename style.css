@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #666;
+}
+
+a{
+    color: #666;
+    text-decoration: none;
+}
+
+nav{
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+}
+
+.selection{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    max-width: 60%;
+}
+
+nav a{
+    
+    flex-basis: 13%;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 8px;
+    margin: 8px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.styles-found{
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+figure{
+    margin: 5px;
+}
+
+.figures-row{
+    display: flex;
+    max-width: 95%;
+}
+
+figcaption{
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+figure p{
+    font-weight: bold;
+    font-size: 18px;
+}
