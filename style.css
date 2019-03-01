@@ -19,7 +19,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0;
-    width: 1320px;;
+    width: 1320px;
     position: relative;
 }
 
@@ -37,7 +37,6 @@ nav a{
     border-top: 1px solid #666;
     border-bottom: 1px solid #666;
     box-sizing: border-box;
-    width: 16%;
     height: 40px;
     display: flex;
     justify-content: space-between;
@@ -62,9 +61,11 @@ figure{
     position: relative;
 }
 
-.figures-row{
+.figures-wrap{
     display: flex;
-    max-width: 95%;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1440px;
 }
 
 figcaption{
@@ -148,11 +149,11 @@ figure p{
     margin-left: 5px;;
 }
 
-.product-type{
+.second-popup{
     left: 227px;
 }
 
-.sleeve-length{
+.third-popup{
     left: 447px;
 }
 
@@ -160,7 +161,7 @@ figure p{
     width: 40%;
 }
 
-.neckline{
+.fourth-popup{
     left: 667px;
 }
 
@@ -168,7 +169,7 @@ figure p{
     width: 55%;;
 }
 
-.design{
+.fifth-popup{
     left: 887px;
 }
 
@@ -176,10 +177,37 @@ figure p{
     width: 80%;
 }
 
-.range{
+.sixth-popup{
     left: 957px;
 }
 
 .huger-popup{
     width: 100%;
+}
+
+.top-112{
+    top: 112px;
+}
+
+@media screen and (max-width: 1320px)
+{
+    .selection{
+        max-width: 1000px;
+    }
+
+    nav a{
+        flex-basis: 15%;
+    }
+
+    .second-popup{
+        
+    }
+
+    .fifth-popup{
+        left: 0
+    }
+
+    .sixth-popup{
+        left: 0;
+    }
 }
