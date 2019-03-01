@@ -5,34 +5,44 @@ body{
 }
 
 a{
-    color: #666;
+    color: rgb(102,102,102);
     text-decoration: none;
 }
 
 nav{
-    background-color: #eee;
+    background-color: rgba(128, 128, 128, 0.15);
     display: flex;
-    justify-content: center;
+    justify-content: center
 }
 
 .selection{
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0;
-    max-width: 60%;
+    width: 1320px;;
+    position: relative;
+}
+
+.selection__row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 nav a{
-    
-    flex-basis: 13%;
+    flex-basis: 15.5%;
+    background-color: rgba(128, 128, 128, 0);
+    padding: 10px;
+    margin: 8px;
     border-top: 1px solid #666;
     border-bottom: 1px solid #666;
+    box-sizing: border-box;
+    width: 16%;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #eee;
-    padding: 8px;
-    margin: 8px;
+
 }
 
 main{
@@ -49,6 +59,7 @@ main{
 
 figure{
     margin: 5px;
+    position: relative;
 }
 
 .figures-row{
@@ -64,4 +75,111 @@ figcaption{
 figure p{
     font-weight: bold;
     font-size: 18px;
+}
+
+.floating-heart{
+    position: absolute;
+    right: 1px;
+    bottom: 86px;
+}
+
+.white:hover{
+    visibility: hidden;
+}
+
+.popup__display{
+    position: absolute;
+    top: 55px;
+    left: 8px;
+    visibility: hidden;
+    z-index: 1;
+}
+.popup__display:target{
+    visibility: visible;
+}
+  
+.popup{
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+}
+
+.popup__navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 10px 15px;
+}
+
+.popup__select-all{
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.popup__select-all:hover{
+    border-color: rgb(0, 81, 255);
+    color: rgb(0, 81, 255);
+}
+
+.popup__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.15);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.popup__content button{
+    width: 95%;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.popup__content button p{
+    color: #666;
+    margin-left: 5px;;
+}
+
+.product-type{
+    left: 227px;
+}
+
+.sleeve-length{
+    left: 447px;
+}
+
+.big-popup{
+    width: 40%;
+}
+
+.neckline{
+    left: 667px;
+}
+
+.bigger-popup{
+    width: 55%;;
+}
+
+.design{
+    left: 887px;
+}
+
+.huge-popup{
+    width: 80%;
+}
+
+.range{
+    left: 957px;
+}
+
+.huger-popup{
+    width: 100%;
 }
