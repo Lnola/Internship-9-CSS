@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    color: #666;
+    color: rgb(102, 102, 102);
 }
 
 a{
@@ -34,14 +34,13 @@ nav a{
     background-color: rgba(128, 128, 128, 0);
     padding: 10px;
     margin: 8px;
-    border-top: 1px solid #666;
-    border-bottom: 1px solid #666;
+    border-top: 1px solid rgba(102, 102, 102, 0.4);
+    border-bottom: 1px solid rgba(102, 102, 102, 0.4);
     box-sizing: border-box;
     height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 main{
@@ -88,6 +87,18 @@ figure p{
     visibility: hidden;
 }
 
+.arrow{
+    position: absolute;
+    top: -22px;
+    left: 183px;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.arrow__last{
+    left: 300px;
+}
+
 .popup__display{
     position: absolute;
     top: 55px;
@@ -98,9 +109,9 @@ figure p{
 .popup__display:target{
     visibility: visible;
 }
-  
+
 .popup{
-    background: #fff;
+    background: rgb(255, 255, 255);
     border-radius: 5px;
     width: 30%;
     position: relative;
@@ -116,12 +127,12 @@ figure p{
 
 .popup__select-all{
     padding: 5px;
-    border: 1px solid #333;
+    border: 1px solid rgb(51, 51, 51);
 }
 
 .popup__select-all:hover{
-    border-color: rgb(0, 81, 255);
-    color: rgb(0, 81, 255);
+    border-color: rgb(0, 80, 250);
+    color: rgb(0, 80, 250);
 }
 
 .popup__content{
@@ -145,7 +156,7 @@ figure p{
 }
 
 .popup__content button p{
-    color: #666;
+    color: rgb(102, 102, 102);
     margin-left: 5px;;
 }
 
@@ -158,7 +169,7 @@ figure p{
 }
 
 .big-popup{
-    width: 40%;
+    width: 36%;
 }
 
 .fourth-popup{
@@ -166,7 +177,7 @@ figure p{
 }
 
 .bigger-popup{
-    width: 55%;;
+    width: 48%;;
 }
 
 .fifth-popup{
@@ -174,11 +185,11 @@ figure p{
 }
 
 .huge-popup{
-    width: 80%;
+    width: 72%;
 }
 
 .sixth-popup{
-    left: 957px;
+    left: 990px;
 }
 
 .huger-popup{
@@ -200,14 +211,229 @@ figure p{
     }
 
     .second-popup{
-        
+        left: 173px;
+    }
+
+    .third-popup{
+        left: 340px;
+    }
+
+    .fourth-popup{
+        left: 506px;
     }
 
     .fifth-popup{
-        left: 0
+        left: 672px;
+    }
+
+    .sixth-popup{
+        left: 700px;
+        right: 10px;
+    }
+
+    .width-35{
+        width: 35%;
+    }
+
+    .big-popup{
+        width: 45%;
+    }
+
+    .bigger-popup{
+        width: 60%;;
+    }
+    
+    .huge-popup{
+        width: 90%;
+    }
+    
+    .huger-popup{
+        width: 100%;
+    }
+
+    .arrow{
+        position: absolute;
+        top: -22px;
+        left: 130px;
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+    }
+    
+    .arrow__last{
+        left: 265px;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    .selection{
+        max-width: 665px;
+    }
+
+    nav a{
+        flex-basis: 14.3%;
+    }
+
+    .second-popup{
+        left: 119px;
+    }
+
+    .third-popup{
+        left: 230px;
+    }
+
+    .fourth-popup{
+        left: 340px;
+    }
+
+    .fifth-popup{
+        left: 451px;
+    }
+
+    .sixth-popup{
+        left: 465px;
+        right: 8px;
+    }
+
+    .width-35{
+        width: 35%;
+    }
+
+    .big-popup{
+        width: 45%;
+    }
+
+    .bigger-popup{
+        width: 60%;;
+    }
+    
+    .huge-popup{
+        width: 90%;
+    }
+    
+    .huger-popup{
+        width: 100%;
+    }
+
+    .arrow{
+        position: absolute;
+        top: -22px;
+        left: 73px;
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+    }
+    
+    .arrow__last{
+        left: 169px;
+    }
+}
+
+@media screen and (max-width: 665px)
+{
+    .selection{
+        max-width: 320px;
+    }
+
+    .selection__row
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav a{
+        flex-basis: 45%;
+    }
+
+    .fbasis-100{
+        flex-basis: 100%;
+    }
+
+    .popup__display{
+        left: 0;
+    }
+
+    .second-popup{
+        left: 0;
+    }
+
+    .third-popup{
+        left: 0;
+    }
+
+    .fourth-popup{
+        left: 0;
+    }
+
+    .fifth-popup{
+        left: 0;
     }
 
     .sixth-popup{
         left: 0;
+    }
+
+    .width-100{
+        width: 100%;
+    }
+
+    .width-35{
+        width: 100%;
+    }
+
+    .big-popup{
+        width: 100%;
+    }
+
+    .bigger-popup{
+        width: 100%;
+    }
+    
+    .huge-popup{
+        width: 100%;
+    }
+    
+    .huger-popup{
+        width: 100%;
+    }
+
+    .mobile-top112{
+        top: 112px;
+    }
+
+    .mobile-top169{
+        top: 169px;
+    }
+
+    .mobile-top225{
+        top: 225px;
+    }
+
+    .mobile-top281{
+        top: 281px;
+    }
+
+    .mobile-top337{
+        top: 337px;
+    }
+
+    figure{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .arrow{
+        position: absolute;
+        top: -22px;
+        left: 130px;
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+    }
+
+    .arrow__last{
+        left: 292px;
+    }
+
+    .mobile-left292{
+        left: 292px;
     }
 }
